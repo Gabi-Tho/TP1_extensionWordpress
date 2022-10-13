@@ -37,23 +37,11 @@ function emc_enqueue()
                     false);
 }
 
-add_action();
+add_action('wp_enqueue_scripts','emc_enqueue');
 
 function genere_boite(){
 
     $contenu = "
-
-    <style>
-
-        .carrousel{
-            border: 2px solid #aaa;
-            background-color:  rgb(74, 142, 95);
-            width: 200px;
-            height: 200px;
-            color: white;
-        }
-
-    </style>
     
     <div class='carrousel'>Carrousel incroyable</div>
     
