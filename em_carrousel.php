@@ -8,7 +8,23 @@
 
 function genere_boite(){
 
-    $contenu = "<div class='carrousel'>Carrousel incroyable<div>";
+    $contenu = "
+
+    <style>
+
+        .carrousel{
+            border: 2px solid #aaa;
+            background-color:  rgb(74, 142, 95);
+            width: 200px;
+            height: 200px;
+            color: white;
+        }
+
+    </style>
+    
+    <div class='carrousel'>Carrousel incroyable</div>
+    
+    ";
 
     return $contenu;
 }
