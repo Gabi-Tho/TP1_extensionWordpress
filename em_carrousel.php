@@ -34,7 +34,7 @@ function emc_enqueue()
                     plugin_dir_url(__FILE__) . "js/carrousel.js",
                     array(),
                     $version_js,
-                    false);
+                    true);
 }
 
 add_action('wp_enqueue_scripts','emc_enqueue');
@@ -43,6 +43,7 @@ function genere_boite(){
 
     $contenu = "
     
+    <button class='btn_modale'>boite modale</button>
     <div class='carrousel'>Carrousel incroyable</div>
     
     ";
